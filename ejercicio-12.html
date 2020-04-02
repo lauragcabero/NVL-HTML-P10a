@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción</title>
+</head>
+
+<body>
+    <fieldset>Rellena todos los campos:
+        <form method="post" action="miservidor.php"></form>
+        <div>
+            <label for="cp">Código postal</label>
+            <input id="cp" type="number">
+        </div>
+        <div>
+            <label for="satisfaccion">Nivel de satisfacción donde 1 es el min y 5 el máx:</label>
+            <input id="satisfaccion" type="number">
+        </div>
+        <div>
+            <label for="email">E-mail usuario:</label>
+            <input id="email" type="email">
+        </div>
+        <div>
+            <label for="puntospositivos">Puntos positivos a mencionar del producto:</label>
+            <textarea id="puntospositivos"></textarea>
+        </div>
+        <div>
+            <label for="puntosnegativos">Puntos negativos a mencionar del producto:</label>
+            <textarea id="puntosnegativos"></textarea>
+        </div>
+        <div>
+            <p>Calificación de la experiencia:</p>
+            <label for="excelente">Excelente</label>
+            <input id="excelente" type="radio">
+            <label for="bueno">Bueno</label>
+            <input id="bueno" type="radio">
+            <label for="regular">Regular</label>
+            <input id="regular" type="radio">
+            <label for="pesimo">Pésimo</label>
+            <input id="pesimo" type="radio">
+        </div>
+        <div>
+            <label for="experiencia">Calificación de la experiencia:</label>
+            <select name="experiencia" id="experiencia">
+                <option value="excelente">Excelente</option>
+                <option value="bueno">Bueno</option>
+                <option value="regular">Regular</option>
+                <option value="pesimo">Pésimo</option>
+            </select>
+        </div>
+        <input type="submit" id="enviar" value="ENVIAR">
+        </form>
+    </fieldset>
+</body>
+
+</html>
